@@ -13,38 +13,67 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: black; color:white">
 
-<div class="container-fluid" id="mainDiv">
 
-    <div class="row">
-        <header  class="container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-8">
-            <h1 class="col-md-8">YOUR HAIRY FRIEND 🐾</h1>
-             <nav class="navbar navbar-expand-sm">
-                 <ol class="pagination">
-                    <li class="nav-item p-1"> <a href="index.html" class="nav-link">Doggies </a> </li>
-                    <li class="nav-item p-1"> <a href="#" class="nav-link">About us </a> </li>
-                </ol>
-             </nav>
-             <!-- <img id="logo" src="logo.png" alt="">    -->
-        </header>
+<!--------HEADER------------->
+
+<div class="container-fluid" class="headerx">
+
+    <h1 style="font-size: 60px;" class="flex-nowrap text-center p-4">YOUR HAIRY FRIEND 🐾</h1>
+    
+     <nav class="navbar navbar-expand-sm justify-content-center headerx">
+         <ol class="pagination">
+            <li class="nav-item p-2"> <a href="index.html" class="nav-link">Doggies </a> </li>
+            <li class="nav-item p-2"> <a href="#" class="nav-link">About us </a> </li>
+        </ol>
+     </nav>
+     <!-- <img id="logo" src="logo.png" alt="">    -->
+
     </div>
 
+   
 
-    <div class="row">
+
+<!--------MAIN SECTION------------->
+
+    <div class="container">
         <section id="mainSection" class="container">
-
-
         </section>
+
+        <div class="container col-lg-12 p-4">
+
+            <div class="container col-lg-6 ">
+
+                <div class="row justify-content-center flex-nowrap">
+
+                    <div id="prevCont" class="animate__animated animate__lightSpeedInLeft">  
+                        <img src="img/buttons.png"  class="container" id="btn-previus" onclick="prev();"/>
+                    </div>
+            
+                    <div id="adoptCont" class="animate__animated animate__bounceIn"> 
+                        <img src="img/buttons.png"  class="container"  id="btn-adopt"  onclick="adopt();"/> 
+                    </div>
+            
+                    <div id="nextCont" class="animate__animated animate__lightSpeedInRight">
+                        <img src="img/buttons.png"  class="container" id="btn-next"    onclick="next();"/> 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     
 
-    <div class="row">
+
         <footer class="container-fluid">
             DevWeb: Jhon Aguiar
         </footer>
-    </div>
+
 
 </div>
 

@@ -26,8 +26,8 @@ let counter = 0;
 function setTemplate(){
 itemTemplate =  
 `
- <div class="row">
-  <div class="container">
+ <div class="container col-lg-8">
+  <div class="container col-lg-12">
     <h2>${Items[counter].name}</h2>
     <span>About him</span>
     <p>
@@ -38,13 +38,7 @@ itemTemplate =
     <figure>
         <img src=${Items[counter].img} alt="">
     </figure>
-        <div class="row">
-         <div class="container m-10 col-lg-10 col-md-8 col-sm-8 col-xs-4">
-            <button class="container" id="btn-previus" onclick="prev();"> PREVIUS </button>
-            <button class="container" id="btn-adopt" onclick="adopt();"> ADOPT </button>
-            <button class="container" id="btn-next" onclick="next();"> NEXT </button>
-        </div>
-    </div>
+
   </div>
  </div>
 
