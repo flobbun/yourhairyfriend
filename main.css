@@ -41,7 +41,6 @@ a{
 #mainSection{
     background-image: url('https://p1.pxfuel.com/preview/807/546/340/grass-green-nature-background.jpg');
     background-size: 100%;
-    background-color: black;
     margin-top: 10%;
     padding: 5px;
     border-radius: 20px;
@@ -134,19 +133,39 @@ button:hover{
     position: absolute;
 }
 /**************/
-#adoptDiv{
-    padding: 0.5%;
-    text-align: center;
-    right: 24%;
-    top: 50%;
-    position: absolute;
-    background-color: rgb(236, 214, 141);
-    border-radius: 10px;
-    border: 1px solid;
-    width: 50%;
-    height: auto;
+@media (min-width: 542px){
+    #adoptDiv{
+        padding: 0.5%;
+        text-align: center;
+        right: 24%;
+        top: 50%;
+        position: absolute;
+        background-color: rgb(236, 214, 141);
+        border-radius: 10px;
+        border: 1px solid;
+        width: 50%;
+        height: auto;
+        min-width: 300px;
+    
+        z-index: 1;
+    }
+}
 
-    z-index: 1;
+@media (min-width: 1px) and (max-width: 542px){
+    #adoptDiv{
+        flex-wrap: nowrap;
+        padding: 0.5%;
+        text-align: center;
+        top: 50%;
+        position: absolute;
+        background-color: rgb(236, 214, 141);
+        border-radius: 10px;
+        border: 1px solid;
+        height: auto;
+        min-width: 300px;
+    
+        z-index: 1;
+    }
 }
 
 #adoptDiv:before{
@@ -170,6 +189,15 @@ button:hover{
     text-align: left;
     color: rgba(235, 48, 48, 0.884);
 }
+/*=====================*/
+/*========About Section=========*/
+#aboutSection{
+    background-color: rgba(0, 0, 0, 0.589);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
 /*=====================*/
 /*========FOOTER=========*/
 
