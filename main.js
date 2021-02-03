@@ -26,8 +26,8 @@ let counter = 0;
 function setTemplate(){
 itemTemplate =  
 `
- <div class="container col-lg-8">
-  <div class="container col-lg-12">
+ <div class="container col-lg-12">
+  <div class="container">
     <h2>${Items[counter].name}</h2>
     <span>About him</span>
     <p>
@@ -35,7 +35,7 @@ itemTemplate =
         Breed: ${Items[counter].breed}<br>
         Age: ${Items[counter].age}
     </p>
-    <figure>
+    <figure class="container">
         <img src=${Items[counter].img} alt="">
     </figure>
 
